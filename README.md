@@ -26,7 +26,7 @@
     }} {{r1=[[1d20+?{Skill}]]}} {{always=1}} {{r2=[[1d20+?{Skill}]]}} {{charname=@{selected|token_name} }}
 
 ### Spells
-*Credit to [AndruC](https://gist.github.com/AndruC/454c3242917050a0dadd44956dade699)
+*Credit to [AndruC](https://gist.github.com/AndruC/454c3242917050a0dadd44956dade699)*
 
     &{template:default}{{name=@{selected|character_name} Spellcasting
     }}{{ Spell DC @{selected|spell_save_dc} = @{selected|spell_attack_bonus} to hit with spell attacks
