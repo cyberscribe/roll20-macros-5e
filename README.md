@@ -24,14 +24,3 @@
     &{template:simple}  {{mod=?{Skill|Strength (@{selected|strength_save_bonus}), [[@{selected|strength_save_bonus}]] Strength |Dexterity (@{selected|dexterity_save_bonus}), [[@{selected|dexterity_save_bonus}]] Dexterity |Constitution (@{selected|constitution_save_bonus}), [[@{selected|constitution_save_bonus}]] Constitution|Intelligence (@{selected|intelligence_save_bonus}), [[@{selected|intelligence_save_bonus}]] Intelligence|Wisdom (@{selected|wisdom_save_bonus}), [[@{selected|wisdom_save_bonus}]] Wisdom|Charisma (@{selected|charisma_save_bonus}), [[@{selected|charisma_save_bonus}]] Charisma
     } }} {{rname=SAVE
     }} {{r1=[[1d20+?{Skill}]]}} {{always=1}} {{r2=[[1d20+?{Skill}]]}} {{charname=@{selected|token_name} }}
-
-### Spells
-*Credit to [AndruC](https://gist.github.com/AndruC/454c3242917050a0dadd44956dade699)*
-
-    &{template:default}{{name=@{selected|character_name} Spellcasting
-    }}{{ Spell DC @{selected|spell_save_dc} = @{selected|spell_attack_bonus} to hit with spell attacks
-    }}{{ Cantrips = [@{selected|repeating_spell-cantrip_$0_spellname}](~selected|repeating_spell-cantrip_$0_spell)
-    }}{{ 1st (SLOTS) = [@{selected|repeating_spell-1_$0_spellname}](~selected|repeating_spell-1_$0_spell)
-    }}{{ 2nd (SLOTS) = [@{selected|repeating_spell-2_$0_spellname}](~selected|repeating_spell-2_$0_spell)
-    }}{{ 3rd (SLOTS) = [@{selected|repeating_spell-3_$0_spellname}](~selected|repeating_spell-3_$0_spell)
-    }}
